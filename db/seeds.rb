@@ -25,7 +25,7 @@ restaurants = Restaurant.create{[
     close_time: 11pm,
     seats: 100,
     address: "1242 Dundas St W, Toronto, ON M6J 1X5",
-    owner_id: 1,
+    user_id: 1,
   },
   { name: "Byblos",
     open_time: 4pm,
@@ -35,3 +35,15 @@ restaurants = Restaurant.create{[
     user_id: 1,
   },
   ]}
+
+
+  users = [
+    {name: "dave", password: "1234", password_confirmation: "1234", phone_number: "4165551234", email: "dave@gmail.com", user_type: "owner"},
+    {name: "jessica", password: "1234", password_confirmation: "1234", phone_number: "4165551234", email: "jessica@gmail.com", user_type: "owner"},
+    {name: "max", password: "1234", password_confirmation: "1234", phone_number: "4165551234", email: "max@gmail.com", user_type: "user"},
+    {name: "sarah", password: "1234", password_confirmation: "1234", phone_number: "4165551234", email: "sarah@gmail.com", user_type: "user"},
+  ]
+
+  users.each do |user|
+    User.create(user)
+  end
