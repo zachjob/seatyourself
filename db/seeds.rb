@@ -36,15 +36,13 @@ restaurants = Restaurant.create([
   },
   ])
 
+  users = [
+    {name: "dave", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "dave@gmail.com"},
+    {name: "jessica", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "jessica@gmail.com"},
+    {name: "max", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "max@gmail.com"},
+    {name: "sarah", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "sarah@gmail.com"},
+  ]
 
-# COMMENT OUT BEFORE MIGRATING RESTAURANTS
-  # users = [
-  #   {name: "dave", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "dave@gmail.com"},
-  #   {name: "jessica", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "jessica@gmail.com"},
-  #   {name: "max", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "max@gmail.com"},
-  #   {name: "sarah", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "sarah@gmail.com"},
-  # ]
-  #
-  # users.each do |user|
-  #   User.create(user)
-  # end
+  users.each do |user|
+    User.create(user)
+  end
