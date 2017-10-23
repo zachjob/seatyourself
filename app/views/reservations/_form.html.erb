@@ -1,4 +1,5 @@
-<%= form_for reservation do |f| %>
+<%= form_for([restaurant, reservation]) do |f| %>
+<h1>Book a Reservation at <%= restaurant.name %></h1>
   <p>
     <%= f.label :date %>
     <%= f.date_select :date %>
@@ -11,7 +12,7 @@
 
   <p>
     <%= f.label :party_size %>
-    <%= f.integer :party_size %>
+    <%= f.number_field :party_size %>
   </p>
 
   <p>
