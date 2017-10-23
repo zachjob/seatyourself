@@ -1,4 +1,4 @@
-#Seat Yourself
+# Seat Yourself
 
 ## Need to have
 * As a visitor, when I go to the homepage, I am presented with a list of restaurants.
