@@ -1,7 +1,7 @@
 # Seat Yourself
 
 ## Need to have
-* As a visitor, when I go to the homepage, I am presented with a list of restaurants.
+* <del>As a visitor, when I go to the homepage, I am presented with a list of restaurants.</del>
 * As a visitor, I do not have the option of making a reservation. (Needs an Account)
 * As a visitor, I want to sign up for a customer account so that I can make reservations online.
 * As a user I can login and logout.
