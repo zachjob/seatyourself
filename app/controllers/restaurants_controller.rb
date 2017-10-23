@@ -17,7 +17,7 @@ class RestaurantsController < ApplicationController
     @restaurant.user_id = current_user
 
     if @restaurant.save
-      render root_url
+      redirect_to root_url
     else
       render :new
     end
