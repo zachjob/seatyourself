@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   resource :session, only: [:new, :create, :destroy]
   resource :users
   resources :restaurants
+  resources :reservations
 
 end
