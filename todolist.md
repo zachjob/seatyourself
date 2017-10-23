@@ -11,3 +11,13 @@
   * Name
   * Location
 * Footer
+
+## Sign-up
+* Navbar
+* Form (Partial)
+  * name (string)
+  * email (string)
+  * phone (string)
+  * user_type (owner, client)
+  * password (string)
+* Footer
