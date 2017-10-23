@@ -7,7 +7,7 @@
 <% end %>
 
   <% if current_user %>
-    <%= link_to "Book a Reservation" %>
+    <%= link_to "Book a Reservation", new_restaurant_reservation_path(@restaurant) %>
   <% else %>
   <p>You must have an account to book a reservation.</p>
     <%= link_to "Sign In", new_session_path %>
