@@ -33,34 +33,34 @@ a list of available time slots
 ## Views
 
 ### User / Client
-Homepage / index (Not logged in)
-Restaurant / show (Not logged in)
+* Homepage / index (Not logged in)
+* Restaurant / show (Not logged in)
   - Book / new-reservation (Needs to be logged in)
-Signup / new (new accounts) (Not logged in)
+* Signup / new (new accounts) (Not logged in)
 
 
 ### Restaurant / Owner
-Homepage / index (Not logged in)
-Restaurant / show/edit (Needs to be logged in)
-Signup / new (Not logged in)
-Create / new-restaurant (Needs to be logged in)
+* Homepage / index (Not logged in)
+* Restaurant / show/edit (Needs to be logged in)
+* Signup / new (Not logged in)
+* Create / new-restaurant (Needs to be logged in)
 
 
 ## Keywords
-User
+* User
   - Name
   - Phone Number
   - Email address
   - User type (customer, owner)
 
-Restaurant
+* Restaurant
   - Name
   - time
   - address
   - user_id(owner)
   - menu
 
-reservation
+* reservation
   - user_id(customer)
   - restaurant_id
   - date_time
