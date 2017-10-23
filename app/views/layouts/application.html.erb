@@ -9,8 +9,13 @@
 <body>
   <header>
     <%= link_to "See all Restaurants", root_path %>
-    <%= link_to "Sign In", new_session_path %>
-    <%= link_to "Sign Up", new_users_path %>
+    <% if current_user %>
+      <p>Hello, <%= current_user.name %></p>
+      <p><%= link_to "Log out", sessions_path("current"), :method => :delete %></p>
+      <% else %>
+        <%= link_to "Sign In", new_session_path %>
+        <%= link_to "Sign Up", new_users_path %>
+      <% end %>
   </header>
 
   <main>
