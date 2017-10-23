@@ -5,46 +5,46 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-# restaurants = Restaurant.create{[
-#   { name: "Los Colibris",
-#     open_time: 5pm,
-#     close_time: 10pm,
-#     seats: 25,
-#     address: " 220 King St W, Toronto, ON M5H 1K4",
-#     user_id: 1,
-#   },
-#   { name: "Over Easy"
-#     open_time: 7am,
-#     close_time: 3pm,
-#     seats: 100,
-#     address: "56 Yonge St, Toronto, ON M5E 1G5",
-#     user_id: 1,
-#   },
-#   { name: "Smoke Signals Barbecue",
-#     open_time: 12pm,
-#     close_time: 11pm,
-#     seats: 100,
-#     address: "1242 Dundas St W, Toronto, ON M6J 1X5",
-#     user_id: 1,
-#   },
-#   { name: "Byblos",
-#     open_time: 4pm,
-#     close_time: 9pm,
-#     seats: 40,
-#     address: "11 Duncan St, Toronto, ON M5V 3M2",
-#     user_id: 1,
-#   },
-#   ]}
+restaurants = Restaurant.create([
+  { name: "Los Colibris",
+    open_time: 5,
+    close_time: 10,
+    seats: 25,
+    address: " 220 King St W, Toronto, ON M5H 1K4",
+    user_id: 1,
+  },
+  { name: "Over Easy",
+    open_time: 7,
+    close_time: 3,
+    seats: 100,
+    address: "56 Yonge St, Toronto, ON M5E 1G5",
+    user_id: 1,
+  },
+  { name: "Smoke Signals Barbecue",
+    open_time: 12,
+    close_time: 11,
+    seats: 100,
+    address: "1242 Dundas St W, Toronto, ON M6J 1X5",
+    user_id: 1,
+  },
+  { name: "Byblos",
+    open_time: 4,
+    close_time: 9,
+    seats: 40,
+    address: "11 Duncan St, Toronto, ON M5V 3M2",
+    user_id: 1,
+  },
+  ])
 
 
 # COMMENT OUT BEFORE MIGRATING RESTAURANTS
-  users = [
-    {name: "dave", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "dave@gmail.com"},
-    {name: "jessica", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "jessica@gmail.com"},
-    {name: "max", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "max@gmail.com"},
-    {name: "sarah", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "sarah@gmail.com"},
-  ]
-
-  users.each do |user|
-    User.create(user)
-  end
+  # users = [
+  #   {name: "dave", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "dave@gmail.com"},
+  #   {name: "jessica", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "jessica@gmail.com"},
+  #   {name: "max", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "max@gmail.com"},
+  #   {name: "sarah", password: "1234", password_confirmation: "1234", phone: "4165551234", email: "sarah@gmail.com"},
+  # ]
+  #
+  # users.each do |user|
+  #   User.create(user)
+  # end
