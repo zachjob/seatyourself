@@ -9,8 +9,8 @@
 * As a customer, if I try to make a reservation outside of a restaurant's opening hours, the reservation will not be made and I will be shown a message indicating why.
 * As a customer, if I try to make a reservation at a time when a restaurant is already at max capacity, the reservation will not be made and I will be shown a message indicating why.
 * As a customer, if I try to make a reservation for a date in the past, the reservation will not be made and I will be shown a message indicating why.
-* As a restaurant owner, when I go to my restaurant's edit page, I can set the opening and closing times of my restaurant.
-* As a restaurant owner, when I go to my restaurant's edit page, I can set the maximum capacity of my restaurant.
+* <del>As a restaurant owner, when I go to my restaurant's edit page, I can set the opening and closing times of my restaurant.</del>
+* <del>As a restaurant owner, when I go to my restaurant's edit page, I can set the maximum capacity of my restaurant.</del>
 
 
 ## Nice to have
