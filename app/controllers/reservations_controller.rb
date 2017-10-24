@@ -15,6 +15,10 @@ class ReservationsController < ApplicationController
     @reservation.time = params[:reservation][:time]
     @reservation.party_size = params[:reservation][:party_size]
 
+    # Update loyalty_points
+    current_user.loyalty_points += 10
+    current_user.save
+
     if @reservation.save
       redirect_to root_url
       flash[:notice] = "Your seat has been reserved."
@@ -33,5 +37,7 @@ class ReservationsController < ApplicationController
   end
 
   def destroy
+    current_user.loyalty_points -= 10
+    current_user.save
   end
 end

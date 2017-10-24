@@ -32,8 +32,4 @@ class Reservation < ApplicationRecord
       self.errors.add(:base, "Sorry, we are do have any tables available at that time.")
     end
   end
-
-  def max_capacity
-
-  end
 end

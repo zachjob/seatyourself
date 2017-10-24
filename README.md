@@ -1,6 +1,11 @@
-# Seat Yourself
+# SeatYourself
 
-## Need to have
+SeatYourself is a modern web-application for finding available seats at local restaurants in Toronto.
+
+Created by Abby Christens, Josh Dales, and Zach Job. ❤️
+
+## Features
+### Need to have
 * <del>As a visitor, when I go to the homepage, I am presented with a list of restaurants.</del>
 * <del>As a visitor, I do not have the option of making a reservation. (Needs an Account)</del>
 * <del>As a visitor, I want to sign up for a customer account so that I can make reservations online.</del>
@@ -13,7 +18,7 @@
 * <del>As a restaurant owner, when I go to my restaurant's edit page, I can set the maximum capacity of my restaurant.</del>
 
 
-## Nice to have
+### Nice to have
 * As a visitor, when I click on a restaurant, I am presented with:
   * <del>address</del>
   * <del>neighbourhood</del
@@ -26,36 +31,21 @@
 * <del>As a restaurant owner, when I go to my profile, I want to see a list of upcoming reservations for the next week.</del>
 * <del>As a restaurant owner, when I go to my restaurant's edit page, I can set the minimum and maximum party size that a reservation can be made for.</del>
 
-## Happy to have
-* As a customer, when I make a reservation at a restaurant, I want to receive loyalty points.
-* As a customer, when I go to my profile, I want to see my loyalty points.
-* As a restaurant owner, when I go to my profile, I want to see a list of customers who have made reservations at my restaurant in order of loyalty points.
+### Happy to have
+* <del>As a customer, when I make a reservation at a restaurant, I want to receive loyalty points.</del>
+* <del>As a customer, when I go to my profile, I want to see my loyalty points.</del>
+* <del>As a restaurant owner, when I go to my profile, I want to see a list of customers who have made reservations at my restaurant in order of loyalty points.</del>
 * Replace booking-times with ONLY AVAILABLE time slots.
-
-## Views
-
-### User / Client
-* Homepage / index (Not logged in)
-* Restaurant / show (Not logged in)
-  - Book / new-reservation (Needs to be logged in)
-* Signup / new (new accounts) (Not logged in)
-
-
-### Restaurant / Owner
-* Homepage / index (Not logged in)
-* Restaurant / show/edit (Needs to be logged in)
-* Signup / new (Not logged in)
-* Create / new-restaurant (Needs to be logged in)
 
 
 ## Keywords
-* User
+### User
   - Name
   - Phone Number
   - Email address
   - User type (customer, owner)
 
-* Restaurant
+### Restaurant
   - Name
   - open_time
   - close_time
@@ -64,7 +54,7 @@
   - user_id(owner)
   - menu
 
-* Reservation
+### Reservation
   - user_id(customer)
   - restaurant_id
   - date
