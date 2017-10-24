@@ -17,6 +17,7 @@ class ReservationsController < ApplicationController
 
     if @reservation.save
       redirect_to root_url
+      flash[:notice] = "Your seat has been reserved."
     else
       render :new
     end
