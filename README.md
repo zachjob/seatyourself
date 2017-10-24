@@ -15,7 +15,7 @@
 
 ## Nice to have
 * As a visitor, when I click on a restaurant, I am presented with:
-  * <del>address</del
+  * <del>address</del>
   * neighbourhood
   * price range
   * summary
