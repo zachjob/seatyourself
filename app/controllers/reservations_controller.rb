@@ -17,6 +17,7 @@ class ReservationsController < ApplicationController
 
     # Update loyalty_points
     current_user.loyalty_points += 10
+    current_user.save
 
     if @reservation.save
       redirect_to root_url
@@ -36,5 +37,7 @@ class ReservationsController < ApplicationController
   end
 
   def destroy
+    current_user.loyalty_points -= 10
+    current_user.save
   end
 end

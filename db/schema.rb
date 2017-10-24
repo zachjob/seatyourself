@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171024185143) do
+ActiveRecord::Schema.define(version: 20171024190714) do
 
   create_table "reservations", force: :cascade do |t|
     t.integer  "user_id"
@@ -44,9 +44,9 @@ ActiveRecord::Schema.define(version: 20171024185143) do
     t.string   "password_digest"
     t.string   "phone"
     t.string   "email"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-    t.integer  "loyalty_points"
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.integer  "loyalty_points",  default: 0
   end
 
 end
