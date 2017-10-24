@@ -15,6 +15,7 @@ class UsersController < ApplicationController
     @user.phone = params[:user][:phone]
     @user.password = params[:user][:password]
     @user.password_confirmation = params[:user][:password_confirmation]
+    @user.loyalty_points = 0
 
     if @user.save
       redirect_to root_url
