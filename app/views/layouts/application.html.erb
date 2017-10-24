@@ -10,7 +10,7 @@
   <header>
     <h1>SeatYourself</h1>
       <% if current_user %>
-        <p>Hello, <%= current_user.name.capitalize %></p>
+        <p>Hello, <%= current_user.name.capitalize %>!</p>
       <% end %>
     <nav>
       <%= link_to "Restaurants", root_path %>
@@ -28,8 +28,11 @@
     <% if flash[:notice]  %>
       <p><%= flash[:notice] %></p>
     <% end %>
+
     <%= yield %>
   </main>
+  <footer>
 
+  </footer>
 </body>
 </html>
