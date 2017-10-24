@@ -2,7 +2,7 @@
 
 SeatYourself is a modern web-application for finding available seats at local restaurants in Toronto.
 
-Created by Abbey Christens, Josh Dales, and Zach Job. ❤️
+Created by Abby Christens, Josh Dales, and Zach Job. ❤️
 
 ## Features
 ### Need to have
