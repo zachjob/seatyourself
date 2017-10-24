@@ -1,4 +1,8 @@
-# Seat Yourself
+# SeatYourself
+
+SeatYourself is a modern web-application for finding available seats at local restaurants in Toronto.
+
+Created by Abbey Christens, Josh Dales, and Zach Job. ❤️
 
 ## Need to have
 * <del>As a visitor, when I go to the homepage, I am presented with a list of restaurants.</del>
@@ -27,9 +31,9 @@
 * <del>As a restaurant owner, when I go to my restaurant's edit page, I can set the minimum and maximum party size that a reservation can be made for.</del>
 
 ## Happy to have
-* As a customer, when I make a reservation at a restaurant, I want to receive loyalty points.
-* As a customer, when I go to my profile, I want to see my loyalty points.
-* As a restaurant owner, when I go to my profile, I want to see a list of customers who have made reservations at my restaurant in order of loyalty points.
+* <del>As a customer, when I make a reservation at a restaurant, I want to receive loyalty points.</del>
+* <del>As a customer, when I go to my profile, I want to see my loyalty points.</del>
+* <del>As a restaurant owner, when I go to my profile, I want to see a list of customers who have made reservations at my restaurant in order of loyalty points.</del>
 * Replace booking-times with ONLY AVAILABLE time slots.
 
 
