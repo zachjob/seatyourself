@@ -2,6 +2,8 @@ class Reservation < ApplicationRecord
   belongs_to :user
   belongs_to :restaurant
 
+  validates :date, :time, :party_size, presence: true
+
   validate :not_past_date
   validate :not_past_time
   validate :book_seats
@@ -13,6 +15,7 @@ class Reservation < ApplicationRecord
   end
 
   def not_past_time
+    return unless self.date <= Date.today
     if self.time < Time.now.hour.to_i
       errors.add(:time, 'not in past')
     end
