@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-restaurants = Restaurant.create{[
+restaurants = Restaurant.create! [
   { name: "Los Colibris",
     open_time: 17,
     close_time: 22,
@@ -57,8 +57,7 @@ restaurants = Restaurant.create{[
     menu: "http://byblostoronto.com/#menu",
     min_seating: 2,
     max_seating: 6,
-  },
-  ]}
+  }]
 
 
   # users = [
