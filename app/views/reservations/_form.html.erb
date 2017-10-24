@@ -17,6 +17,8 @@
   <p>
     <%= f.label :party_size %>
     <%= f.number_field :party_size %>
+    <%# = f.select(:party_size, (restaurant.min_seating..restaurant.max_seating)to_a) %>
+
   </p>
 
   <p>
