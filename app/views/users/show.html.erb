@@ -9,6 +9,12 @@
 
 <% if current_user.restaurants.present? %>
 <h2>My Restaurants</h2>
+
+<% current_user.restaurants.each do |restaurant| %>
+  <h3><%= restaurant.name %></h3>
+  <p><%= link_to "Edit Restaurant", edit_restaurant_path(restaurant) %></p>
+  <% end %>
+
   <% current_user.restaurants.each do |restaurant| %>
     <h3><%= restaurant.name %></h3>
     <% restaurant.reservations.each do |reservation| %>
