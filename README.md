@@ -4,7 +4,8 @@ SeatYourself is a modern web-application for finding available seats at local re
 
 Created by Abbey Christens, Josh Dales, and Zach Job. ❤️
 
-## Need to have
+## Features
+### Need to have
 * <del>As a visitor, when I go to the homepage, I am presented with a list of restaurants.</del>
 * <del>As a visitor, I do not have the option of making a reservation. (Needs an Account)</del>
 * <del>As a visitor, I want to sign up for a customer account so that I can make reservations online.</del>
@@ -17,7 +18,7 @@ Created by Abbey Christens, Josh Dales, and Zach Job. ❤️
 * <del>As a restaurant owner, when I go to my restaurant's edit page, I can set the maximum capacity of my restaurant.</del>
 
 
-## Nice to have
+### Nice to have
 * As a visitor, when I click on a restaurant, I am presented with:
   * <del>address</del>
   * <del>neighbourhood</del
@@ -30,7 +31,7 @@ Created by Abbey Christens, Josh Dales, and Zach Job. ❤️
 * <del>As a restaurant owner, when I go to my profile, I want to see a list of upcoming reservations for the next week.</del>
 * <del>As a restaurant owner, when I go to my restaurant's edit page, I can set the minimum and maximum party size that a reservation can be made for.</del>
 
-## Happy to have
+### Happy to have
 * <del>As a customer, when I make a reservation at a restaurant, I want to receive loyalty points.</del>
 * <del>As a customer, when I go to my profile, I want to see my loyalty points.</del>
 * <del>As a restaurant owner, when I go to my profile, I want to see a list of customers who have made reservations at my restaurant in order of loyalty points.</del>
@@ -38,13 +39,13 @@ Created by Abbey Christens, Josh Dales, and Zach Job. ❤️
 
 
 ## Keywords
-* User
+### User
   - Name
   - Phone Number
   - Email address
   - User type (customer, owner)
 
-* Restaurant
+### Restaurant
   - Name
   - open_time
   - close_time
@@ -53,7 +54,7 @@ Created by Abbey Christens, Josh Dales, and Zach Job. ❤️
   - user_id(owner)
   - menu
 
-* Reservation
+### Reservation
   - user_id(customer)
   - restaurant_id
   - date
