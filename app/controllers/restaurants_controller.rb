@@ -17,6 +17,11 @@ class RestaurantsController < ApplicationController
     @restaurant.seats = params[:restaurant][:seats]
     @restaurant.price_range = params[:restaurant][:price_range]
     @restaurant.user_id = current_user
+    @restaurant.neighbourhood = params[:restaurant][:neighbourhood]
+    @restaurant.summary = params[:restaurant][:summary]
+    @restaurant.menu = params[:restaurant][:menu]
+    @restaurant.min_seating = params[:restaurant][:min_seating]
+    @restaurant.max_seating = params[:restaurant][:max_seating]
 
     if @restaurant.save
       redirect_to root_url

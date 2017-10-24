@@ -4,15 +4,4 @@ class Restaurant < ApplicationRecord
   belongs_to :user
 
 
-  
-  # def method
-  #   if reservation.date.party_size <= restaurant.seats
-  #     restaurants.seats -= reservation.date.party_size
-  #   else
-  #     flash[:notice] = "We're fully booked on that night"
-  #   end
-  # end
-
-
-
 end

@@ -3,7 +3,6 @@ class Reservation < ApplicationRecord
   belongs_to :restaurant
 
   validate :not_past_date
-  # validate :not_past_time
 
   def not_past_date
     if self.date < Date.today
