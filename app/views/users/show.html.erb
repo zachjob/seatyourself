@@ -1,7 +1,7 @@
 <main>
   <section>
     <h1>Hi <%= current_user.name.capitalize %>.</h1>
-    <h2>You have <%= current_user.loyalty_points %>.</h2>
+    <h2>You have <%= current_user.loyalty_points %> SeatYourself loyalty points.</h2>
     <h2>My Reservations</h2>
     <% current_user.reservations.each do |reservation| %>
       <h3><%= reservation.restaurant.name %></h3>
