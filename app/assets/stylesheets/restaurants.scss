@@ -1,8 +1,16 @@
 // Place all the styles related to the restaurants_controller controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.hero {
+  height: 550px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: auto;}
+}
+
 .restaurants {
-display: inline-block;
+  display: inline-block;
   width: 20%;
   padding: 0 5px;
   margin: 1rem;
