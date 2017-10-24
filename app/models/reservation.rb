@@ -8,6 +8,8 @@ class Reservation < ApplicationRecord
   def not_past_date
     if self.date < Date.today
       errors.add(:date, 'not in past')
+    elsif nil
+      errors.add(:date, 'needs dat  e')
     end
   end
 

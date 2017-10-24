@@ -1,3 +1,16 @@
+
+<% if reservation.errors.any? %>
+  <div>
+    <p><%= pluralize(reservation.errors.count, "error") %></p>
+
+    <ul>
+      <% reservation.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
 <%= form_for([restaurant, reservation]) do |f| %>
 <h1>Book a Reservation at <%= restaurant.name %></h1>
   <p>
