@@ -4,7 +4,7 @@ class Reservation < ApplicationRecord
 
   validate :not_past_date
   validate :book_seats
-  
+
   def not_past_date
     if self.date < Date.today
       errors.add(:date, 'not in past')
@@ -28,9 +28,5 @@ class Reservation < ApplicationRecord
     else
       self.errors.add(:base, "Sorry, we are do have any tables available at that time.")
     end
-  end
-
-  def max_capacity
-
   end
 end

@@ -18,5 +18,8 @@
         <li>For a party of <%= reservation.party_size %></li>
       </ul>
     <% end %>
+    <% restaurant.users.order(:loyalty_points).uniq.each do |user| %>
+      <p><%= user.name %> | <%= user.loyalty_points %>
+    <% end %>
   <% end %>
 <% end %>
