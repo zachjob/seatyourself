@@ -8,22 +8,22 @@
 * As a customer, when I go to a restaurant's page, I can make a reservation for the time and party size of my choice.
 * <del>As a customer, if I try to make a reservation outside of a restaurant's opening hours, the reservation will not be made and I will be shown a message indicating why.</del>
 * As a customer, if I try to make a reservation at a time when a restaurant is already at max capacity, the reservation will not be made and I will be shown a message indicating why.
-* As a customer, if I try to make a reservation for a date in the past, the reservation will not be made and I will be shown a message indicating why.
+* <del>As a customer, if I try to make a reservation for a date in the past, the reservation will not be made and I will be shown a message indicating why.</del>
 * <del>As a restaurant owner, when I go to my restaurant's edit page, I can set the opening and closing times of my restaurant.</del>
 * <del>As a restaurant owner, when I go to my restaurant's edit page, I can set the maximum capacity of my restaurant.</del>
 
 
 ## Nice to have
 * As a visitor, when I click on a restaurant, I am presented with:
-  * address
+  * <del>address</del>
   * neighbourhood
   * price range
   * summary
   * menu
-a list of available time slots
-* As a customer I can go to a page to see a list of the reservations I’ve booked.
+  * a list of available time slots
+* <del>As a customer I can go to a page to see a list of the reservations I’ve booked.</del>
 * Replace booking-times with ONLY AVAILABLE time slots.
-* As a customer, when I make a reservation, I want to be shown a confirmation message with the details of my reservation.
+* <del>As a customer, when I make a reservation, I want to be shown a confirmation message with the details of my reservation.</del>
 * As a restaurant owner, when I go to my profile, I want to see a list of upcoming reservations for the next week.
 * As a restaurant owner, when I go to my restaurant's edit page, I can set the minimum and maximum party size that a reservation can be made for.
 
