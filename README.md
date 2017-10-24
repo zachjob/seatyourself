@@ -7,7 +7,7 @@
 * <del>As a user I can login and logout.</del>
 * <del>As a customer, when I go to a restaurant's page, I can make a reservation for the time and party size of my choice.</del>
 * <del>As a customer, if I try to make a reservation outside of a restaurant's opening hours, the reservation will not be made and I will be shown a message indicating why.</del>
-* As a customer, if I try to make a reservation at a time when a restaurant is already at max capacity, the reservation will not be made and I will be shown a message indicating why.
+* <del>As a customer, if I try to make a reservation at a time when a restaurant is already at max capacity, the reservation will not be made and I will be shown a message indicating why.</del>
 * <del>As a customer, if I try to make a reservation for a date in the past, the reservation will not be made and I will be shown a message indicating why.</del>
 * <del>As a restaurant owner, when I go to my restaurant's edit page, I can set the opening and closing times of my restaurant.</del>
 * <del>As a restaurant owner, when I go to my restaurant's edit page, I can set the maximum capacity of my restaurant.</del>
