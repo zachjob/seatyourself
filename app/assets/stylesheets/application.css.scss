@@ -33,3 +33,19 @@ header {
    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
    text-align: center;
  }
+
+footer{
+  text-align: center;
+  background: #2e2e2e;
+  color: #ffffff;
+  padding: 40px 80px 40px 80px;
+  a{
+    color: #ffffff;}
+  h2{
+    margin-bottom: 10px;
+    margin-top: 0;}
+  .contributors{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 25px;  }
+}
