@@ -15,6 +15,7 @@ class RestaurantsController < ApplicationController
     @restaurant.open_time = params[:restaurant][:open_time]
     @restaurant.close_time = params[:restaurant][:close_time]
     @restaurant.seats = params[:restaurant][:seats]
+    @restaurant.price_range = params[:restaurant][:price_range]
     @restaurant.user_id = current_user
 
     if @restaurant.save
@@ -40,6 +41,7 @@ class RestaurantsController < ApplicationController
     @restaurant.open_time = params[:restaurant][:open_time]
     @restaurant.close_time = params[:restaurant][:close_time]
     @restaurant.seats = params[:restaurant][:seats]
+    @restaurant.price_range = params[:restaurant][:price_range]
 
     if @restaurant.save
       redirect_to restaurant_path(@restaurant)

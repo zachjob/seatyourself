@@ -26,6 +26,11 @@
 </p>
 
 <p>
+  <%= f.label :price_range %>
+  <%= f.select(:price_range, (1..5).to_a) %>
+</p>
+
+<p>
   <%= f.submit %>
 </p>
 
