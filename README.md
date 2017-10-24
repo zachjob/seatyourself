@@ -32,21 +32,6 @@
 * As a restaurant owner, when I go to my profile, I want to see a list of customers who have made reservations at my restaurant in order of loyalty points.
 * Replace booking-times with ONLY AVAILABLE time slots.
 
-## Views
-
-### User / Client
-* Homepage / index (Not logged in)
-* Restaurant / show (Not logged in)
-  - Book / new-reservation (Needs to be logged in)
-* Signup / new (new accounts) (Not logged in)
-
-
-### Restaurant / Owner
-* Homepage / index (Not logged in)
-* Restaurant / show/edit (Needs to be logged in)
-* Signup / new (Not logged in)
-* Create / new-restaurant (Needs to be logged in)
-
 
 ## Keywords
 * User
