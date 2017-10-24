@@ -1,3 +1,13 @@
 // Place all the styles related to the User controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.owner-dashboard{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  .edit-links{
+    padding: 0 5px;
+    margin: 1rem;
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;}
+}
