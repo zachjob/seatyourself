@@ -7,13 +7,16 @@
   <p>For a party of <%= reservation.party_size %></p>
 <% end %>
 
-<% Restaurant.where(user_id: current_user).each do |restaurant| %>
-  <h1><%= restaurant.name %></h1>
-  <% restaurant.reservations.each do |reservation| %>
-    <ul>
-      <li><%= reservation.user.name %></li>
-      <li><%= reservation.date %> @ <%= reservation.time %></li>
-      <li>For a party of <%= reservation.party_size %></li>
-    </ul>
+<% if current_user.restaurants.present? %>
+<h2>My Restaurants</h2>
+  <% current_user.restaurants.each do |restaurant| %>
+    <h3><%= restaurant.name %></h3>
+    <% restaurant.reservations.each do |reservation| %>
+      <ul>
+        <li><%= reservation.user.name %></li>
+        <li><%= reservation.date %> @ <%= reservation.time %></li>
+        <li>For a party of <%= reservation.party_size %></li>
+      </ul>
+    <% end %>
   <% end %>
 <% end %>
