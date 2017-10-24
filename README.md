@@ -17,20 +17,20 @@
 * As a visitor, when I click on a restaurant, I am presented with:
   * <del>address</del>
   * neighbourhood
-  * price range
+  * <del>price range</del>
   * summary
   * menu
   * a list of available time slots
 * <del>As a customer I can go to a page to see a list of the reservations I’ve booked.</del>
-* Replace booking-times with ONLY AVAILABLE time slots.
 * <del>As a customer, when I make a reservation, I want to be shown a confirmation message with the details of my reservation.</del>
-* As a restaurant owner, when I go to my profile, I want to see a list of upcoming reservations for the next week.
+* <del>As a restaurant owner, when I go to my profile, I want to see a list of upcoming reservations for the next week.</del>
 * As a restaurant owner, when I go to my restaurant's edit page, I can set the minimum and maximum party size that a reservation can be made for.
 
 ## Happy to have
 * As a customer, when I make a reservation at a restaurant, I want to receive loyalty points.
 * As a customer, when I go to my profile, I want to see my loyalty points.
 * As a restaurant owner, when I go to my profile, I want to see a list of customers who have made reservations at my restaurant in order of loyalty points.
+* Replace booking-times with ONLY AVAILABLE time slots.
 
 ## Views
 
