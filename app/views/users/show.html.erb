@@ -1,0 +1,8 @@
+<h1>Hi <%= current_user.name %></h1>
+
+<h2>Reservations</h2>
+<% current_user.reservations.each do |reservation| %>
+  <h3><%= reservation.restaurant.name %></h3>
+  <p><%= reservation.date %> @ <%= reservation.time %></p>
+  <p>For a party of <%= reservation.party_size %></p>
+<% end %>
