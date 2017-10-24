@@ -16,15 +16,15 @@
 ## Nice to have
 * As a visitor, when I click on a restaurant, I am presented with:
   * <del>address</del>
-  * neighbourhood
+  * <del>neighbourhood</del
   * <del>price range</del>
-  * summary
-  * menu
+  * <del>summary</del>
+  * <del>menu</del>
   * a list of available time slots
 * <del>As a customer I can go to a page to see a list of the reservations I’ve booked.</del>
 * <del>As a customer, when I make a reservation, I want to be shown a confirmation message with the details of my reservation.</del>
 * <del>As a restaurant owner, when I go to my profile, I want to see a list of upcoming reservations for the next week.</del>
-* As a restaurant owner, when I go to my restaurant's edit page, I can set the minimum and maximum party size that a reservation can be made for.
+* <del>As a restaurant owner, when I go to my restaurant's edit page, I can set the minimum and maximum party size that a reservation can be made for.</del>
 
 ## Happy to have
 * As a customer, when I make a reservation at a restaurant, I want to receive loyalty points.
