@@ -20,8 +20,8 @@
   * price range
   * summary
   * menu
-a list of available time slots
-* As a customer I can go to a page to see a list of the reservations I’ve booked.
+  * a list of available time slots
+* <del>As a customer I can go to a page to see a list of the reservations I’ve booked.</del>
 * Replace booking-times with ONLY AVAILABLE time slots.
 * As a customer, when I make a reservation, I want to be shown a confirmation message with the details of my reservation.
 * As a restaurant owner, when I go to my profile, I want to see a list of upcoming reservations for the next week.
