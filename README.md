@@ -5,7 +5,7 @@
 * <del>As a visitor, I do not have the option of making a reservation. (Needs an Account)</del>
 * <del>As a visitor, I want to sign up for a customer account so that I can make reservations online.</del>
 * <del>As a user I can login and logout.</del>
-* As a customer, when I go to a restaurant's page, I can make a reservation for the time and party size of my choice.
+* <del>As a customer, when I go to a restaurant's page, I can make a reservation for the time and party size of my choice.</del>
 * <del>As a customer, if I try to make a reservation outside of a restaurant's opening hours, the reservation will not be made and I will be shown a message indicating why.</del>
 * As a customer, if I try to make a reservation at a time when a restaurant is already at max capacity, the reservation will not be made and I will be shown a message indicating why.
 * <del>As a customer, if I try to make a reservation for a date in the past, the reservation will not be made and I will be shown a message indicating why.</del>
