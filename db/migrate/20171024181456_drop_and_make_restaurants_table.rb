@@ -7,7 +7,7 @@ class DropAndMakeRestaurantsTable < ActiveRecord::Migration[5.0]
       t.integer :open_time
       t.integer :close_time
       t.integer :seats
-      t.string :address
+      t.string  :address
       t.integer :user_id
       t.string  :price_range
       t.string  :neighbourhood
