@@ -15,6 +15,8 @@ class ReservationsController < ApplicationController
     @reservation.time = params[:reservation][:time]
     @reservation.party_size = params[:reservation][:party_size]
 
+    
+
     if @reservation.save
       redirect_to root_url
       flash[:notice] = "Your seat has been reserved."
