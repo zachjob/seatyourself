@@ -8,12 +8,13 @@ class Reservation < ApplicationRecord
   validate :book_seats
 
   def book_seats
-    booked_seats = restaurant.reservations.where(time == reservation.time).sum(:party_size)
-    available_seats = restaurant.seats - booked_seats
 
-    if reservation.party_size <= available_seats
+    booked_seats = Reservation.where(time: time).where(restaurant_id: restaurant_id).sum(:party_size)
+    available_seats = Restaurant.find(restaurant_id).seats - booked_seats
+
+    if party_size <= available_seats
     else
-      flash[:notice] = "Sorry, we do not have any tables available at that time."
+      self.errors.add(:base, "Sorry, we do not have any tables available at that time.")
     end
   end
 
