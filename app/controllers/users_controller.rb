@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @sort_by_points = User.order_by_loyalty
   end
 
   def create
