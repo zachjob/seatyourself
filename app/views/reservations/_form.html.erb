@@ -13,6 +13,10 @@
 
 <%= form_for([restaurant, reservation]) do |f| %>
 <h1>Book a Reservation at <%= restaurant.name %></h1>
+  <% @reservation.errors.full_messages.each do |msg| %>
+    <p><%= msg %></p>
+  <% end %>
+
   <p>
     <%= f.label :date %>
     <%= f.date_field :date %>
