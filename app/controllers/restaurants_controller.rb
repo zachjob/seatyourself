@@ -33,7 +33,6 @@ class RestaurantsController < ApplicationController
   def show
     @restaurant = Restaurant.find(params[:id])
     @reservation = Reservation.new
-    # @restaurant.convert_time(@restaurant.open_time)
   end
 
   def edit
