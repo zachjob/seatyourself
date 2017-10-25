@@ -45,7 +45,8 @@ class ReservationsController < ApplicationController
     @reservation.party_size = params[:reservation][:party_size]
 
     if @reservation.save
-      redirect_to reservation_path(@restaurant)
+      redirect_to root_url
+      flash[:notice] = "Your reservation has been updated."
     else
       render :update
     end
