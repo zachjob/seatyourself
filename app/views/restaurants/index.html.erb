@@ -5,7 +5,9 @@
 <section class="all_restaurants">
   <h1>Restaurants</h1>
   <% @restaurants.each do |restaurant| %>
-    <div class="restaurants">
+    <% counter = 1 %>
+    <div class="restaurants restaurant_grid<%= counter %>">
+      <% counter += 1 %>
       <%= link_to "#{restaurant.name}", restaurant_path(restaurant) %>
       <p><%= restaurant.address %></p>
       <p>Open: <%= restaurant.open_time.strftime("%I:%M%p")   %> - <%= restaurant.close_time.strftime("%I:%M%p") %></p>
