@@ -65,12 +65,16 @@
         color: #ffffff; }
         h1 {
           margin: 0; }
-          p {
-            color: rgba(255,255,255,.6);
-            display: inline-block;}
-            span {
-              color: rgba(255,255,255,.6);
-              padding: 0 15px;}
+        p {
+          color: rgba(255,255,255,.6);
+          display: inline-block;}
+        span {
+          color: rgba(255,255,255,.6);
+          padding: 0 15px;}
+        a {
+          color: $seatyourself;
+          text-decoration: none;
+        }
     }
 }
 
