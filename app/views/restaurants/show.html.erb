@@ -25,10 +25,10 @@
   </div>
 
   <div class="book">
-    <h2>Book a Reservation</h2>
     <% if current_user %>
-    <%= link_to "Book a Reservation", new_restaurant_reservation_path(@restaurant) %>
+    <%= render "reservations/form", restaurant: @restaurant, reservation: @reservation  %>
     <% else %>
+    <h2>Book a Reservation</h2>
     <p>You must have an account to book a reservation.</p>
     <%= link_to "Sign In", new_session_path %>
     <%= link_to "Sign Up", new_users_path %>
