@@ -3,6 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "variables";
 
+.user_reservations {
+  h1 {
+    background-color: white;
+    color: $seatyourself;
+    margin-bottom: 0;
+    line-height: 2;
+  }
+}
+
 .owner-dashboard{
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -16,6 +25,9 @@
 .restaurants_by_reso{
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  div {
+    margin: 0 1rem;
+  }
 }
 .sign_up {
   display: inline-block;
@@ -51,6 +63,7 @@
 }
 .reservation {
   display: inline-block;
+  background-color: white;
   width: 20%;
   padding: 0 5px;
   margin: 1rem;

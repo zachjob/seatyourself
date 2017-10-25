@@ -1,8 +1,8 @@
 <main>
-  <section>
+  <section class="user_reservations">
     <h1>Hi <%= current_user.name.capitalize %>.</h1>
     <p>You have <%= current_user.loyalty_points %> SeatYourself loyalty points.</p>
-    <h3>My Reservations</h2>
+    <h2>My Reservations</h2>
     <% current_user.reservations.each do |reservation| %>
       <div class ="reservation">
         <h3><%= reservation.restaurant.name %></h3>
@@ -15,7 +15,7 @@
   </section>
 
   <% if current_user.restaurants.present? %>
-  <section>
+  <section class="user_restaurants">
     <h2>My Restaurants</h2>
     <div class="owner-dashboard">
       <% current_user.restaurants.each do |restaurant| %>

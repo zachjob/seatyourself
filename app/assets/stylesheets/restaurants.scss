@@ -12,7 +12,7 @@
 }
 
 .all_restaurants {
-  background-color: #F7F7F7;
+  background-color: $background;
   display: grid;
   grid-gap: 10px 10px;
   grid-template-columns: repeat(4, 4fr);
@@ -81,7 +81,7 @@
 
 .restaurant-details {
   padding: 5% 0;
-  background-color: #F7F7F7;
+  background-color: $background;
   a{
     color: $seatyourself;
     text-decoration: none;
