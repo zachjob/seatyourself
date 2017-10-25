@@ -58,3 +58,15 @@
     text-align: center;
   }
 }
+
+section.restaurant-details {
+    display: grid;
+    grid-template-columns: 10px 2fr 2fr 2fr 1fr 10px;
+    grid-gap: 20px;
+}
+.description {
+    grid-column: 2 / 4;
+}
+.book {
+    grid-column: 5;
+  }
