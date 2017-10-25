@@ -77,6 +77,10 @@
 .restaurant-details {
   padding: 5% 0;
   background-color: #F7F7F7;
+  a{
+    color: $seatyourself;
+    text-decoration: none;
+  }
   .description, .book {
     background: #fff;
     border-radius: 5px;
