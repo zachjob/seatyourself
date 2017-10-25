@@ -1,12 +1,26 @@
 // Place all the styles related to the restaurants_controller controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
+
 .hero {
   height: 550px;
   overflow: hidden;
   img {
     width: 100%;
     height: auto;}
+}
+
+.all_restaurants {
+  background-color: #F7F7F7;
+  h1 {
+    background-color: white;
+    color: $seatyourself;
+    padding-left: 1rem;
+    margin-top: 0;
+    line-height: 2;
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .restaurants {
