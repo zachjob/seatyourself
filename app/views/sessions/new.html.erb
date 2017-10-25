@@ -3,17 +3,17 @@
   <h1>Please Sign In</h1>
 
   <%= form_tag session_path do %>
+  <div class="form_fields">
+    <p>
+      <%= label_tag :email %>
+      <%= email_field_tag :email, params[:email] %>
+    </p>
 
-  <p>
-    <%= label_tag :email %>
-    <%= email_field_tag :email, params[:email] %>
-  </p>
-
-  <p>
-    <%= label_tag :password %>
-    <%= password_field_tag :password%>
-  </p>
-
+    <p>
+      <%= label_tag :password %>
+      <%= password_field_tag :password%>
+    </p>
+  <div>
   <p class="submit">
     <%= submit_tag "Log In" %>
   </p>
