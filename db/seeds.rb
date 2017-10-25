@@ -60,13 +60,13 @@ restaurants = Restaurant.create! [
   }]
 
 
-  # users = [
-  #   {name: "dave", password: "1234", password_confirmation: "1234", phone_number: 4165551234, email: "dave@gmail.com", user_type: "owner"},
-  #   {name: "jessica", password: "1234", password_confirmation: "1234", phone_number: 4165551234, email: "jessica@gmail.com", user_type: "owner"},
-  #   {name: "max", password: "1234", password_confirmation: "1234", phone_number: 4165551234, email: "max@gmail.com", user_type: "user"},
-  #   {name: "sarah", password: "1234", password_confirmation: "1234", phone_number: 4165551234, email: "sarah@gmail.com", user_type: "user"},
-  # ]
-  #
-  # users.each do |user|
-  #   User.create(user)
-  # end
+  users = [
+    {name: "dave", password: "1234", password_confirmation: "1234", phone_number: 4165551234, email: "dave@gmail.com", user_type: "owner"},
+    {name: "jessica", password: "1234", password_confirmation: "1234", phone_number: 4165551234, email: "jessica@gmail.com", user_type: "owner"},
+    {name: "max", password: "1234", password_confirmation: "1234", phone_number: 4165551234, email: "max@gmail.com", user_type: "user"},
+    {name: "sarah", password: "1234", password_confirmation: "1234", phone_number: 4165551234, email: "sarah@gmail.com", user_type: "user"},
+  ]
+
+  users.each do |user|
+    User.create(user)
+  end
