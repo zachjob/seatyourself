@@ -31,6 +31,7 @@ header {
    top: 0;
    left: 0;
    right: 0;
+   padding-bottom: 5px;
    z-index: 999;
    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
    text-align: center;
@@ -39,6 +40,18 @@ header {
      border-radius: 70%;
      display: inline-block;
      padding: 0 10px 11px 10px;
+   }
+   nav {
+     a {
+       color: $seatyourself;
+       padding: 0 20px ;
+       margin-bottom: 5px;
+       text-decoration: none;
+     }
+     a:hover {
+      background: $seatyourself;
+      color: white;
+     }
    }
    .restaurant_owners {
      background-color: #f7f7f7;
