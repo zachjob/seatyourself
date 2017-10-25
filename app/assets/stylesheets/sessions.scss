@@ -1,6 +1,8 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
+
 .sign_in_up {
   text-align: center;
 }
@@ -10,9 +12,27 @@
   margin: 30px auto;
   text-align: center;
   h1 {
-    margin: 30px;
+    margin: 15px 30px 30px 30px;
   }
   p {
     margin-top: 25px;
+  }
+  form {
+      text-align: right;
+      input[type="submit"] {
+        font-size: medium;
+      }
+      p.submit {
+        text-align: center;
+      }
+  }
+  a {
+    color: $seatyourself;
+    text-decoration: none;
+    padding: 0 10px;
+  }
+  a:hover {
+    background-color: $seatyourself;
+    color: white;
   }
 }
