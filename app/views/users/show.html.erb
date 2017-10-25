@@ -1,12 +1,14 @@
 <main>
   <section>
     <h1>Hi <%= current_user.name.capitalize %>.</h1>
-    <h2>You have <%= current_user.loyalty_points %> SeatYourself loyalty points.</h2>
-    <h2>My Reservations</h2>
+    <p>You have <%= current_user.loyalty_points %> SeatYourself loyalty points.</p>
+    <h3>My Reservations</h2>
     <% current_user.reservations.each do |reservation| %>
-      <h3><%= reservation.restaurant.name %></h3>
-      <p><%= reservation.date %> @ <%= reservation.time %></p>
-      <p>For a party of <%= reservation.party_size %></p>
+      <div class ="reservation">
+        <h3><%= reservation.restaurant.name %></h3>
+        <p><%= reservation.date %> @ <%= reservation.time %></p>
+        <p>For a party of <%= reservation.party_size %></p>
+      </div>
     <% end %>
   </section>
 
