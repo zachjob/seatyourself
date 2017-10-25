@@ -5,6 +5,7 @@ class Reservation < ApplicationRecord
   validate :not_past_date
   validate :not_past_time
   validate :book_seats
+  validate :must_be_open
 
   def not_past_date
     return unless date
@@ -17,6 +18,13 @@ class Reservation < ApplicationRecord
     return unless date
     if time < Time.now && date < Date.today
       errors.add(:time, 'not in past')
+    end
+  end
+
+  def must_be_open
+    return unless date && time
+    if time < restaurant.open_time || time > restaurant.close_time
+      errors.add(:time, 'must be open')
     end
   end
 
