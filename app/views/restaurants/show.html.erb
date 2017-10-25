@@ -1,28 +1,38 @@
 <section class="show-header">
   <div class="show-details">
     <h1><%= @restaurant.name %></h1>
-    <p><%= @restaurant.neighbourhood %></p><span>|</span><p><% @restaurant.price_range.to_i.times do %>$<% end %></p>
+    <p><%= @restaurant.neighbourhood %></p>
+    <span>|</span>
+    <p><% @restaurant.price_range.to_i.times do %>$<% end %></p>
+    <% if session[:user_id] == @restaurant.user_id %>
+    <span>|</span>
+    <%= link_to "Edit Restaurant", edit_restaurant_path(@restaurant) %>
+    <% end %>
+
   </div>
 </section>
 
-<p><%= @restaurant.summary %></p>
+<section class="restaurant-details">
+  <div class="description">
+    <h2>About <%= @restaurant.name %></h2>
+    <p><%= @restaurant.summary %></p>
 
-<p><%= link_to "View Our Menu", @restaurant.menu, :target => "_blank" %></p>
-<p><%= @restaurant.address %></p>
-<p>Open: <%= @restaurant.open_time %>-<%= @restaurant.close_time %></p>
+    <p><%= link_to "View Our Menu", @restaurant.menu, :target => "_blank" %></p>
+    <p><%= @restaurant.address %></p>
+    <p>Open: <%= @restaurant.open_time %>-<%= @restaurant.close_time %></p>
 
-<section>
-  <%= link_to "Find Us On Google Maps", "https://maps.google.com/?q=#{ @restaurant.address }", :target => "_blank" %>
-</section>
+    <%= link_to "Find Us On Google Maps", "https://maps.google.com/?q=#{ @restaurant.address }", :target => "_blank" %>
+  </div>
 
-<% if session[:user_id] == @restaurant.user_id %>
-  <%= link_to "Edit Restaurant", edit_restaurant_path(@restaurant) %>
-<% end %>
-
-  <% if current_user %>
+  <div class="book">
+    <h2>Book a Reservation</h2>
+    <% if current_user %>
     <%= link_to "Book a Reservation", new_restaurant_reservation_path(@restaurant) %>
-  <% else %>
-  <p>You must have an account to book a reservation.</p>
+    <% else %>
+    <p>You must have an account to book a reservation.</p>
     <%= link_to "Sign In", new_session_path %>
     <%= link_to "Sign Up", new_users_path %>
-  <% end %>
+    <% end %>
+  </div>
+
+</section>

@@ -29,13 +29,32 @@
     .show-details{
       font-size: 1.2em;
       padding-left: 20px;
-      h1, p, span {
+      h1 {
         color: #ffffff; }
         h1 {
           margin: 0; }
           p {
+            color: rgba(255,255,255,.6);
             display: inline-block;}
             span {
+              color: rgba(255,255,255,.6);
               padding: 0 15px;}
     }
+}
+
+.restaurant-details {
+  padding: 5% 0;
+  background-color: #F7F7F7;
+  .description, .book {
+    background: #fff;
+    border-radius: 5px;
+    padding: 1% 2% 2% 2%;
+    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    display: inline-block;}
+  .description h2 {
+    border-bottom: 1px solid rgba(0,0,0,.08); }
+  .book{
+    width: 300px;
+    text-align: center;
+  }
 }
