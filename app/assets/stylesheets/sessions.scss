@@ -1,3 +1,18 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.sign_in_up {
+  text-align: center;
+}
+
+.sign_in {
+  display: inline-block;
+  margin: 30px auto;
+  text-align: center;
+  h1 {
+    margin: 30px;
+  }
+  p {
+    margin-top: 25px;
+  }
+}
