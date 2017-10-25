@@ -31,9 +31,25 @@ class ReservationsController < ApplicationController
   end
 
   def edit
+    @reservation = Reservation.find(params[:id])
   end
 
   def update
+    @reservation = Reservation.find(params[:id])
+    @restaurant = Restaurant.find(params[:restaurant_id])
+
+    @reservation.user = current_user
+    @reservation.restaurant = @restaurant
+    @reservation.date = params[:reservation][:date]
+    @reservation.time = params[:reservation][:time]
+    @reservation.party_size = params[:reservation][:party_size]
+
+    if @reservation.save
+      redirect_to reservation_path(@restaurant)
+    else
+      render :update
+    end
+
   end
 
   def destroy
@@ -47,5 +63,5 @@ class ReservationsController < ApplicationController
     end
     redirect_to root_url
   end
-  
+
 end
