@@ -11,7 +11,7 @@
 
   <p>
     <%= f.label :time %>
-    <%= f.select(:time, (restaurant.open_time..restaurant.close_time).to_a) %>
+    <%= f.time_field :time %>
   </p>
 
   <p>
