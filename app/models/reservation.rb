@@ -15,7 +15,7 @@ class Reservation < ApplicationRecord
 
   def not_past_time
     return unless date
-    if self.time < Time.now.hour.to_i && date <= Date.today
+    if self.time < Time.now
       errors.add(:time, 'not in past')
     end
   end
