@@ -33,7 +33,7 @@
       <% restaurant.reservations.each do |reservation| %>
         <ul>
           <li><%= reservation.user.name %></li>
-          <li><%= reservation.date %> @ <%= reservation.time %></li>
+          <li><%= reservation.date %> @ <%= reservation.time.strftime("%I:%M%p") %></li>
           <li>For a party of <%= reservation.party_size %></li>
         </ul>
       <% end %>
