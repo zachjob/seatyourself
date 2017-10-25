@@ -25,7 +25,9 @@
       </div>
       <% end %>
     </div>
+    <div class="restaurants_by_reso">
     <% current_user.restaurants.each do |restaurant| %>
+    <div>
       <h3><%= restaurant.name %></h3>
       <% restaurant.reservations.each do |reservation| %>
         <ul>
@@ -37,7 +39,9 @@
       <% restaurant.users.order(loyalty_points: :desc).uniq.each do |user| %>
         <p><%= user.name %> | <%= user.loyalty_points %>
       <% end %>
-    </section>
+    </div>
     <% end %>
+  </div>
     <% end %>
+  </section>
   </main>
