@@ -13,7 +13,10 @@
     overflow: hidden;}
 }
 
-
+.restaurants_by_reso{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
 .sign_up {
   display: inline-block;
   margin: 30px auto;

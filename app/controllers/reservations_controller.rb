@@ -41,11 +41,11 @@ class ReservationsController < ApplicationController
     if @reservation.present?
       @reservation.destroy
 
-      current_user.loyalty_points -= 10
-      current_user.save
+      # current_user.loyalty_points -= 10
+      # current_user.save
       flash[:notice] = "Reservation has been successfully deleted."
     end
     redirect_to root_url
   end
-  
+
 end
