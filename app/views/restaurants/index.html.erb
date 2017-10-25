@@ -6,7 +6,7 @@
   <h1>Restaurants</h1>
   <% @restaurants.each do |restaurant| %>
     <div class="restaurants">
-      <h3><%= link_to "#{restaurant.name}", restaurant_path(restaurant) %></h3>
+      <%= link_to "#{restaurant.name}", restaurant_path(restaurant) %>
       <p><%= restaurant.address %></p>
       <p>Open: <%= restaurant.open_time %>-<%= restaurant.close_time %></p>
     </div>
