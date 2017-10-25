@@ -46,7 +46,7 @@ class ReservationsController < ApplicationController
       end
       flash[:notice] = "Reservation has been successfully deleted."
     end
-    redirect_to root_url
+    redirect_to users_url(current_user)
   end
 
 end
