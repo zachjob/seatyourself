@@ -3,7 +3,7 @@ class Restaurant < ApplicationRecord
   has_many :users, through: :reservations
   belongs_to :user
 
-  validates :name, :open_time, :close_time, :seats, :address, :price_range, :summary, :menu, :min_seating, :max_seating, presence: true
+  validates :name, :open_time, :close_time, :seats, :address, :price_range, :summary, :menu, :min_seating, :max_seating, :user_id, presence: true
 
 
 end

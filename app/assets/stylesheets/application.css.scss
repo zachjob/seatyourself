@@ -32,6 +32,21 @@ header {
    z-index: 999;
    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
    text-align: center;
+   .restaurant_owners {
+     background-color: #f7f7f7;
+     margin: 0;
+     text-align: right;
+     a{
+       color: #717171;
+       text-decoration: none;
+       font-size: 13px;
+       line-height: 2;
+       margin-right: 20px;
+     }
+     a:hover {
+       color: black;
+     }
+   }
  }
 
 footer{

@@ -4,10 +4,6 @@
 
 <section>
   <h1>Restaurants</h1>
-  <% if current_user %>
-    <%= link_to "Create new restaurant", new_restaurant_path %>
-  <% end %>
-  <br>
   <% @restaurants.each do |restaurant| %>
     <div class="restaurants">
       <h3><%= link_to "#{restaurant.name}", restaurant_path(restaurant) %></h3>

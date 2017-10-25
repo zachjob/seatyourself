@@ -8,6 +8,11 @@
 </head>
 <body>
   <header>
+    <% if current_user %>
+      <p class="restaurant_owners"><%= link_to "Own a restaurant?", new_restaurant_path, :target => "_blank" %></p>
+    <% else %>
+      <p class="restaurant_owners"><%= link_to "Own a restaurant?", new_session_path, :target => "_blank" %></p>
+    <% end %>
     <h1>SeatYourself</h1>
       <% if current_user %>
         <p>Hello, <%= current_user.name.capitalize %>!</p>
