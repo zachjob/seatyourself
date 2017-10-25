@@ -16,8 +16,7 @@ class ReservationsController < ApplicationController
     @reservation.party_size = params[:reservation][:party_size]
 
     # Update loyalty_points
-    current_user.loyalty_points += 10
-    current_user.save
+    current_user.increment!(:loyalty_points, by = 10)
 
     if @reservation.save
       redirect_to root_url
@@ -41,8 +40,7 @@ class ReservationsController < ApplicationController
     if @reservation.present?
       @reservation.destroy
 
-      # current_user.loyalty_points -= 10
-      # current_user.save
+      current_user.increment!(:loyalty_points, by = -10)
       flash[:notice] = "Reservation has been successfully deleted."
     end
     redirect_to root_url
