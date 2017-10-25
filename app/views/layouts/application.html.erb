@@ -9,9 +9,9 @@
 <body>
   <header>
     <% if current_user %>
-      <p class="restaurant_owners"><%= link_to "Own a restaurant?", new_restaurant_path, :target => "_blank" %></p>
+      <p class="restaurant_owners"><%= link_to "Own a restaurant?", new_restaurant_path %></p>
     <% else %>
-      <p class="restaurant_owners"><%= link_to "Own a restaurant?", new_session_path, :target => "_blank" %></p>
+      <p class="restaurant_owners"><%= link_to "Own a restaurant?", new_session_path %></p>
     <% end %>
     <h1>SeatYourself</h1>
       <% if current_user %>
