@@ -21,7 +21,7 @@
       <% current_user.restaurants.each do |restaurant| %>
       <div class="edit-links">
         <h3><%= restaurant.name %></h3>
-        <h4>This week's Total Reservations: <%= Reservation.where("date BETWEEN '#{Time.now}' AND '#{1.week.from_now}'").where(restaurant_id: restaurant).count %></h4>
+        <h4>This week's Total Reservations: <%= Reservation.where("date BETWEEN '#{Time.now.day}' AND '#{1.week.from_now}'").where(restaurant_id: restaurant).count %></h4>
         <p><%= link_to "Edit Restaurant", edit_restaurant_path(restaurant) %></p>
       </div>
       <% end %>
