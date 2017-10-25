@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+@import "variables";
+
 html {
   margin: 0;
   box-sizing: border-box;
@@ -32,6 +34,12 @@ header {
    z-index: 999;
    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
    text-align: center;
+   h1 {
+     border-bottom: 3px solid $seatyourself;
+     border-radius: 70%;
+     display: inline-block;
+     padding: 0 10px 11px 10px;
+   }
    .restaurant_owners {
      background-color: #f7f7f7;
      margin: 0;
@@ -46,8 +54,8 @@ header {
      a:hover {
        color: black;
      }
-   }
- }
+  }
+}
 
 footer{
   text-align: center;
