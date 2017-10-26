@@ -1,18 +1,18 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any styles
+* defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+* file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
 @import "variables";
 
 html {
@@ -26,47 +26,53 @@ body {
 }
 
 header {
-   position: relative;
-   background: white;
-   top: 0;
-   left: 0;
-   right: 0;
-   padding-bottom: 5px;
-   z-index: 999;
-   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
-   text-align: center;
-   h1 {
-     border-bottom: 3px solid $seatyourself;
-     border-radius: 70%;
-     display: inline-block;
-     padding: 0 10px 11px 10px;
-   }
-   nav {
-     a {
-       color: $seatyourself;
-       padding: 0 20px ;
-       margin-bottom: 5px;
-       text-decoration: none;
-     }
-     a:hover {
+  position: relative;
+  background: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 5px;
+  z-index: 999;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
+  text-align: center;
+
+  h1 {
+    border-bottom: 3px solid $seatyourself;
+    border-radius: 70%;
+    display: inline-block;
+    padding: 0 10px 11px 10px;
+  }
+
+  nav {
+    a {
+      color: $seatyourself;
+      padding: 0 20px ;
+      margin-bottom: 5px;
+      text-decoration: none;
+    }
+
+    a:hover {
       background: $seatyourself;
       color: white;
-     }
-   }
-   .restaurant_owners {
-     background-color: $background;
-     margin: 0;
-     text-align: right;
-     a{
-       color: #717171;
-       text-decoration: none;
-       font-size: 13px;
-       line-height: 2;
-       margin-right: 20px;
-     }
-     a:hover {
-       color: black;
-     }
+    }
+  }
+
+  .restaurant_owners {
+    background-color: $background;
+    margin: 0;
+    text-align: right;
+
+    a{
+      color: #717171;
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 2;
+      margin-right: 20px;
+    }
+
+    a:hover {
+      color: black;
+    }
   }
 }
 
@@ -74,18 +80,74 @@ main {
   background-color: $background
 }
 
-footer{
+footer {
   text-align: center;
   background: #2e2e2e;
   color: #ffffff;
   padding: 40px 80px 40px 80px;
-  a{
-    color: #ffffff;}
+
+  a {
+    color: #ffffff;
+  }
+
   h2{
     margin-bottom: 10px;
-    margin-top: 0;}
+    margin-top: 0;
+  }
   .contributors{
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-gap: 25px;  }
+    grid-gap: 25px;
+  }
+}
+
+
+// FORMS //
+
+.form_section {
+text-align: center;
+}
+
+.form_box {
+  display: inline-block;
+  margin: 30px auto;
+  text-align: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
+  background-color: white;
+  padding: 0 1rem;
+  border-radius: 5px;
+
+  h1 {
+    margin: 15px 30px 30px 30px;
+  }
+
+  p {
+    margin-top: 25px;
+  }
+
+  label {
+    float: left;
+  }
+
+  form {
+    text-align: right;
+    input[type="submit"] {
+      font-size: medium;
+    }
+
+    p.submit {
+      text-align: center;
+    }
+
+    a {
+      color: $seatyourself;
+      text-decoration: none;
+      padding: 0 10px;
+    }
+
+    a:hover {
+      background-color: $seatyourself;
+      color: white;
+    }
+  }
 }

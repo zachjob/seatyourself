@@ -15,31 +15,27 @@
   background-color: white;
   padding: 0 1rem;
   border-radius: 5px;
+
   h1 {
     margin: 15px 30px 30px 30px;
   }
+
   p {
     margin-top: 25px;
   }
+
   form {
-      text-align: right;
-      input[type="submit"] {
-        font-size: medium;
-      }
-      p.submit {
-        text-align: center;
-      }
+    text-align: right;
+    input[type="submit"] {
+    font-size: medium;
   }
+
+    p.submit {
+      text-align: center;
+    }
+
   label {
     float: left;
   }
-  a {
-    color: $seatyourself;
-    text-decoration: none;
-    padding: 0 10px;
-  }
-  a:hover {
-    background-color: $seatyourself;
-    color: white;
-  }
+}
 }
