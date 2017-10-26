@@ -115,3 +115,33 @@ section.restaurant-details {
 .book {
     grid-column: 5;
   }
+.form_res {
+  text-align: center;
+}
+.add_new_restaurant {
+  display: inline-block;
+  margin: 30px auto;
+  text-align: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
+  background-color: white;
+  padding: 0 1rem;
+  border-radius: 5px;
+  h1 {
+    margin: 15px 30px 30px 30px;
+  }
+  p {
+    margin-top: 25px;
+  }
+  label {
+    float: left;
+  }
+  form {
+      text-align: right;
+      input[type="submit"] {
+      font-size: medium;
+      }
+      p.submit {
+        text-align: center;
+      }
+  }
+}
