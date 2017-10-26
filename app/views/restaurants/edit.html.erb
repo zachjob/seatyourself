@@ -1,1 +1,7 @@
-<%= render "form", restaurant: @restaurant %>
+<div class="form_res">
+  <div class="edit_your_restaurant">
+    <h1>Edit <%= @restaurant.name %></h1>
+    
+    <%= render "form", restaurant: @restaurant %>
+  </div>
+</div>
