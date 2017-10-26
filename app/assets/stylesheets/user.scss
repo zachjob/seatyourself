@@ -7,8 +7,14 @@
   h1 {
     background-color: white;
     color: $seatyourself;
-    margin-bottom: 0;
+    margin: 5px 0;
     line-height: 2;
+    text-indent: 1rem;
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  p, h2 {
+    text-indent: 1rem;
   }
 }
 
